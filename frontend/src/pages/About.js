@@ -4,8 +4,7 @@ import SectionHeader from '../components/Style/SectionHeader';
 const About = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className=" hero-gradient py-20" style={{backgroundColor:"#063970"}}>
+      <section className=" hero-gradient py-20" style={{backgroundColor:"#283618"}}>
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About FinTrust Capital</h1>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -14,7 +13,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Story */}
       <section className="py-20 section-padding bg-white">
         <div className="container-custom ">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -42,7 +40,7 @@ const About = () => {
             </div>
             <div className="mx-3 relative w-100">
               <img 
-                src="https://sdmntprwestus3.oaiusercontent.com/files/00000000-c7c8-61fd-b94a-49e33acd89b8/raw?se=2025-05-11T20%3A19%3A40Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=864daabb-d06a-46b3-a747-d35075313a83&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-10T22%3A30%3A04Z&ske=2025-05-11T22%3A30%3A04Z&sks=b&skv=2024-08-04&sig=UXjnvrv%2Br8eN6xnI0oClAHQh899soJA1ODJ1q0Q2gDI%3D" 
+                src="building.png" 
                 alt="FinTrust Capital " 
                 className="rounded-lg shadow-xl w-full h-auto"
               />
@@ -51,7 +49,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Vision & Mission */}
       <section className="mx-4 py-20 section-padding bg-gray-50">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -81,7 +78,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Core Values */}
       <section className="mx-4 py-20 section-padding bg-white">
         <div className="container-custom">
           <SectionHeader 
@@ -132,7 +128,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Leadership Team */}
       <section className="mx-4 py-20 section-padding bg-gray-50">
         <div className="container-custom">
           <SectionHeader 
@@ -184,7 +179,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Milestones */}
       <section className="py-20 section-padding bg-white">
         <div className="container-custom">
           <SectionHeader 

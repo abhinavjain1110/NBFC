@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { ChevronDown, Search } from 'lucide-react';
-import SectionHeader from '../components/Style/SectionHeader';
 
 const FAQ = () => {
   const faqCategories = [
@@ -108,10 +107,8 @@ const FAQ = () => {
   };
   
   const filteredFaqs = faqItems.filter(item => {
-    // Filter by category
     const categoryMatch = activeCategory === 'all' || item.category === activeCategory;
     
-    // Filter by search query
     const searchMatch = searchQuery === '' || 
       item.question.toLowerCase().includes(searchQuery.toLowerCase()) || 
       item.answer.toLowerCase().includes(searchQuery.toLowerCase());
@@ -121,7 +118,6 @@ const FAQ = () => {
 
   return (
     <div>
-      {/* Hero Section */}
       <section className="hero-gradient py-20" style={{backgroundColor:"#283618"}}>
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Frequently Asked Questions</h1>
@@ -131,11 +127,9 @@ const FAQ = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-20 section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            {/* Search Bar */}
             <div className="relative mb-8">
               <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
                 <Search className="h-5 w-5 text-gray-400" />
@@ -149,7 +143,6 @@ const FAQ = () => {
               />
             </div>
             
-            {/* Categories */}
             <div className="flex flex-wrap gap-3 mb-8">
               {faqCategories.map((category) => (
                 <button
@@ -157,7 +150,7 @@ const FAQ = () => {
                   onClick={() => handleCategoryChange(category.id)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                     activeCategory === category.id
-                      ? 'bg-nbfc-light text-white'
+                      ? 'bg-[#023047] text-white'
                       : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
                 >
@@ -166,7 +159,6 @@ const FAQ = () => {
               ))}
             </div>
             
-            {/* FAQ Items */}
             <div className="space-y-4">
               {filteredFaqs.length > 0 ? (
                 filteredFaqs.map((faq, index) => (
@@ -201,30 +193,6 @@ const FAQ = () => {
           </div>
         </div>
       </section>
-
-      {/* Contact Section */}
-      {/* <section className="py-10" style={{backgroundColor:"#bc6c25"}}>
-        <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Still Have Questions?
-          </h2>
-          <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            If you couldn't find the answer to your question, our support team is here to help you.
-          </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <div className="bg-white/10 rounded-lg p-6 text-white w-full sm:w-auto sm:min-w-[250px] backdrop-blur-sm">
-              <h3 className="text-xl font-medium mb-2">Contact Support</h3>
-              <p className="text-gray-200 mb-3">Our team is available from Monday to Saturday, 9AM to 6PM</p>
-              <a href="mailto:support@fintrust.com" className="text-nbfc-light hover:underline">support@fintrust.com</a>
-            </div>
-            <div className="bg-white/10 rounded-lg p-6 text-white w-full sm:w-auto sm:min-w-[250px] backdrop-blur-sm">
-              <h3 className="text-xl font-medium mb-2">Call Us</h3>
-              <p className="text-gray-200 mb-3">Speak directly with our customer support team</p>
-              <a href="tel:+912212345678" className="text-nbfc-light hover:underline">+91 22 1234 5678</a>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 };

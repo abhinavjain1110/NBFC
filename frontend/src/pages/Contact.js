@@ -219,13 +219,17 @@ const Contact = () => {
                     ></textarea>
                   </div>
                     <button 
-                      type="submit" 
-                      className="rounded rounded-lg text-white py-3 px-3"
-                      style={{backgroundColor:"#023047"}}
-                    >
-                      Submit
-                    </button>
+                    type="submit" 
+                    className="rounded-lg text-white py-2 px-3 bg-[#023047] hover:bg-[#283618]"
+                      >
+                        Submit
+                      </button>
                 </form>
+                {status && (
+                  <p className="mt-4 text-center text-sm font-medium text-red-500">
+                    {status}
+                  </p>
+                )}
               </div>
             </div>
           </div>

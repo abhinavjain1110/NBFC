@@ -20,7 +20,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               <Link to="/" className="font-medium  hover:text-nbfc-light transition-colors"style={{color:"#023047"}}>Home</Link>
@@ -35,11 +34,11 @@ const Navbar = () => {
             <button className='px-3 py-3 font-semibold border rounded-lg hover:bg-white' style={{color:"#023047",borderColor:"#023047"}}>Apply Now</button>
           </div>
 
-          {/* Mobile Navigation Button */}
+          {/* Mobile */}
           <div className="md:hidden">
             <button
               type="button"
-              className="rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-nbfc-accent focus:outline-none"
+              className="rounded-md p-2 inline-flex items-center justify-center text-black  focus:outline-none"
               onClick={toggleMenu}
             >
               <span className="sr-only">Open main menu</span>

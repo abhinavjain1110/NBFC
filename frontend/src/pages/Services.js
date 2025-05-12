@@ -4,7 +4,6 @@ import SectionHeader from '../components/Style/SectionHeader';
 const Services = () => {
   return (
     <div>
-      {/* Hero Section */}
       <section className="hero-gradient py-20" style={{backgroundColor:"#283618"}}>
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Financial Services</h1>
@@ -14,7 +13,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Services Overview */}
       <section className="mx-4 py-20 section-padding bg-white">
         <div className="container-custom">
           <SectionHeader 
@@ -94,10 +92,6 @@ const Services = () => {
               />
             </div>
             <div>
-              {/* <SectionHeader 
-                title="Business Loans" 
-                subtitle="Tailored financial solutions to fuel your business growth"
-              /> */}
               <div>
               <h1 className="mx-4 text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
                 Business Loans
@@ -135,16 +129,14 @@ const Services = () => {
                   </li>
                 </ul>
               </div>
-              
-              <button className="rounded rounded-lg text-white py-4 px-4 mx-4 hover:bg-white" style={{backgroundColor:"#023047"}}>
-                Apply Now
-              </button>
+              <button className="mx-4 px-3 py-3 font-semibold border rounded-lg text-white bg-[#023047] hover:bg-[#283618]" >
+              Apply Now
+            </button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Eligibility & Process */}
       <section className="mx- 4 py-20 section-padding bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -241,7 +233,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className=" py-10" style={{backgroundColor:"#bc6c25"}}>
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
